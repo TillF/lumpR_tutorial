@@ -1,0 +1,4 @@
+class_id	description	upper_limit
+1	clay	0.002
+2	silt	0.05
+3	sand	2

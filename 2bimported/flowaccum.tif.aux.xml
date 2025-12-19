@@ -1,0 +1,13 @@
+<PAMDataset>
+  <PAMRasterBand band="1">
+    <Description>flowaccum1@PERMANENT</Description>
+    <Metadata>
+      <MDI key="STATISTICS_APPROXIMATE">YES</MDI>
+      <MDI key="STATISTICS_MAXIMUM">5099</MDI>
+      <MDI key="STATISTICS_MEAN">-1233.0219594595</MDI>
+      <MDI key="STATISTICS_MINIMUM">-479152</MDI>
+      <MDI key="STATISTICS_STDDEV">21629.079761908</MDI>
+      <MDI key="STATISTICS_VALID_PERCENT">12.37</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>
