@@ -455,7 +455,7 @@ lump_grass_post(
   reservoir_strategic(res_vect = "res_outlets", res_file="./2bprepared/from_reservoir_inventory/reservoir_pars.csv", reservoir_file = "reservoir.txt", dir_out = getwd(), overwrite = TRUE, subbasin = subbas)
   
   #small / distributed reservoirs
-  reservoir_lumped(res_vect = "res_small", subbas = subbas, res_vect_class = "res_small_2", dir_out =  "./Reservoir/", overwrite = TRUE)
+  reservoir_lumped(res_vect = "res_small", subbas = subbas, res_vect_class = "res_small_2", dir_out =  "./", overwrite = TRUE)
 
   
     
@@ -496,13 +496,16 @@ db_fill(dbname=dbname,
         tables = c("subbasins", "r_subbas_contains_lu", 
                    "landscape_units", "r_lu_contains_tc", "terrain_components", "r_tc_contains_svc",
                    "soils", "horizons", "soil_veg_components",
-                   "particle_classes", "r_soil_contains_particles","vegetation", "reservoirs_strategic"),
+                   "particle_classes", "r_soil_contains_particles","vegetation", "reservoirs_strategic",
+                   "reservoirs_small_classes", "r_subbas_contains_reservoirs_small"),
         dat_files=c("sub_stats.txt", "lu_stats.txt", 
                     "lu_db.dat", "lucontainstc.dat", "terraincomponents.dat", "tc_contains_svc.dat",
                     "soil.dat", "horizons.dat", "soil_vegetation_components.dat",
-                    "particle_classes.dat", "r_soil_contains_particles.dat", "vegetation.txt", "reservoir.txt"), 
+                    "particle_classes.dat", "r_soil_contains_particles.dat", "vegetation.txt", "reservoir.txt",
+                    "reservoirs_small_classes.dat", "r_subbas_contains_reservoirs_small.dat"), 
         dat_dir=getwd(),
         overwrite=T, verbose=T)
+
 
 # Please process these cleaning actions step-by-step according to your needs.
 ?db_check
@@ -586,11 +589,12 @@ db_wasa_input(dbname = dbname,
                       "Hillslope/soil.dat", "Hillslope/vegetation.dat", "Hillslope/svc_in_tc.dat",
                       "do.dat", "maxdim.dat", "part_class.dat", "Hillslope/soil_particles.dat", 
                       "Hillslope/rainy_season.dat", "Hillslope/x_seasons.dat", "Hillslope/svc.dat",
-                      "Reservoir/reservoir.dat"),
+                      "Reservoir/reservoir.dat","Reservoir/lake.dat", "Reservoir/lake_number.dat",
+                      "Reservoir/lake_maxvol.dat"),
               overwrite = overwrite, verbose=T)
 
 # Next steps: 
 # - manually adjust model input files to your needs ...
-# - prepare additional WASA-SED input data (meteo data, rainy_season etc.) See WASA documentation (e.g. https://tillf.github.io/WASA-SED/)
+# - prepare additional WASA-SED input data (meteo data, rainy_season etc.) See WASA-SED documentation (e.g. https://tillf.github.io/WASA-SED/)
 
 
