@@ -253,7 +253,7 @@ str_odbc = c(paste0("[", dbname, "]"),
               "Driver = SQLite3",
               "Server = localhost",
               "Port = 3306",
-              "Database = tutorial",  # Adjust database name as needed
+              paste0("Database = ", getwd(), "/", dbname),  # Adjust database name as needed
               "User = ",          # Adjust username as needed
               "Password = ")  # Adjust password as needed
 
@@ -496,11 +496,11 @@ db_fill(dbname=dbname,
         tables = c("subbasins", "r_subbas_contains_lu", 
                    "landscape_units", "r_lu_contains_tc", "terrain_components", "r_tc_contains_svc",
                    "soils", "horizons", "soil_veg_components",
-                   "particle_classes", "r_soil_contains_particles","vegetation"),
+                   "particle_classes", "r_soil_contains_particles","vegetation", "reservoirs_strategic"),
         dat_files=c("sub_stats.txt", "lu_stats.txt", 
                     "lu_db.dat", "lucontainstc.dat", "terraincomponents.dat", "tc_contains_svc.dat",
                     "soil.dat", "horizons.dat", "soil_vegetation_components.dat",
-                    "particle_classes.dat", "r_soil_contains_particles.dat", "vegetation.txt"), 
+                    "particle_classes.dat", "r_soil_contains_particles.dat", "vegetation.txt", "reservoir.txt"), 
         dat_dir=getwd(),
         overwrite=T, verbose=T)
 
