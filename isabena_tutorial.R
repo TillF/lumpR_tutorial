@@ -77,7 +77,7 @@ outlet_row = 1 #specify the row of outlet point of entire watershed
 
 
 dem = "dem" # DEM raster - MANDATORY
-lcov = "vegetation" # land / vegetation cover raster map in GRASS location - MANDATORY
+lcov = "vegetation" # land / vegetation cover raster map in GRASS location (e.g. derived from CORINE) - MANDATORY
 soil = "soils" # soil raster map in GRASS location - MANDATORY (The package [SoilDataPrep](https://github.com/TillF/SoilDataPrep/tree/master) is designed to help you with the generation of soil data, especially in conjunction with lumpR) 
 
 
@@ -88,8 +88,8 @@ river = NULL # river vector map
 
 # soil and vegetation properties
 # path to prepared vegetation parameter table 'vegetation.dat' in WASA format - MANDATORY
-#'vegetation.dat' can be used from prior WASA-parameterizations or generated with Alban's scripts
-veg_path = "2bprepared/from_AlbansScripts" 
+#'vegetation.dat' can be e.g. be generated from CORINE data and the mapping table provided in 2bprepared/vegetation_from_corine
+veg_path = "2bprepared/vegetation_from_corine" 
 
 # path to prepared soil parameter tables 'horizons.dat, 'particle_classes.dat', 'r_soil_contains_particles.dat', and 'soil.dat' in WASA format - MANDATORY
 #these files can be used from prior WASA-parameterizations or generated with https://github.com/TillF/SoilDataPrep
