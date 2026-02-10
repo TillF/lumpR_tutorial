@@ -1,0 +1,9 @@
+#This file works as a header to the output of area2catena. Don't add additional headerlines.
+#1. line after header: description/field names of the data columns contained in file catena_out
+#2. line after header: specifies, how many columns of data belong to the respective data-field given in line 1
+#3. line after header: number of classes/ weighting factors for classification process
+#4. line after header: factors used for weighting in partition process (column: 1: number of TC to create; 2.: partition method (not yet used); 3.: not used; 4-nn: weighting of supplemental data in TC-partitioning)
+id	p_no	elevation	svc	soils	slope_width
+1	1	1	72	11	1
+-1	3	10	1	3	1
+3	0	0	0	0	0

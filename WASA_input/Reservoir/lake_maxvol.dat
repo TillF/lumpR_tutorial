@@ -1,0 +1,4 @@
+Specification of water storage capacity for the reservoir size classes
+Sub-basin-ID, maxlake[m**3]  (5 reservoir size classes)
+1	20453.9	167380.4	974032.6	3458264.2	40790948.9
+2	27022.4	0	753653.7	2369799.8	0

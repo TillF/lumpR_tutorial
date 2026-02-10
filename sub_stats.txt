@@ -1,0 +1,3 @@
+pid	area	x	y	lon	lat	elev	drains_to	lag_time	retention	description	a_stream_order	chan_len
+1	394.96	297254.69	4687751.91	0.5398	42.3156	1077	9999	0.361	0.973	NA	NA	58482
+2	40.92	296714.71	4694861.73	0.5307	42.3795	1311	1	0.077	0.203	NA	NA	12555

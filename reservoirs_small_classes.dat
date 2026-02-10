@@ -1,0 +1,6 @@
+pid	maxlake0	lake_vol0_factor	lake_change	alpha_Molle	k_Molle	damc	damd	area_max	name
+1	   27708.89	0.2	0	2.7	1500	 7	1.5	  25403.79	class1
+2	  171634.79	0.2	0	2.7	1500	14	1.5	  80085.98	class2
+3	 1063142.74	0.2	0	2.7	1500	21	1.5	 252472.73	class3
+4	 6585334.34	0.2	0	2.7	1500	28	1.5	 795925.64	class4
+5	40790974.68	0.2	0	2.7	1500	35	1.5	2509172.42	class5

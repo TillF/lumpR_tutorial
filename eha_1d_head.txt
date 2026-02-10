@@ -1,0 +1,3 @@
+eha_id	aspect	rel_alt
+1	2	1
+NA	4	2
